@@ -1,0 +1,30 @@
+{
+  "name": "lifx-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "watch": {
+    "start": {
+      "patterns": ["src"],
+      "extensions": "ts"
+    }
+  },
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build": "npm run clean && tsc || exit 1",
+    "serve": "node build/index.js",
+    "clean": "rm -rf ./build/*",
+    "start:watch": "npm-watch start",
+    "start:w": "npm-watch"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "node-lifx-lan": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^9.3.0",
+    "npm-watch": "^0.3.0",
+    "typescript": "^2.6.2"
+  }
+}
