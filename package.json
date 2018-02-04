@@ -5,7 +5,9 @@
   "license": "MIT",
   "watch": {
     "start": {
-      "patterns": ["src"],
+      "patterns": [
+        "src"
+      ],
       "extensions": "ts"
     }
   },
@@ -18,13 +20,14 @@
     "start:w": "npm-watch"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "express-validator": "^4.3.0",
     "node-lifx-lan": "^0.0.1"
   },
   "devDependencies": {
-    "@types/node": "^9.3.0",
+    "@types/node": "^9.4.0",
     "npm-watch": "^0.3.0",
-    "typescript": "^2.6.2"
+    "typescript": "^2.7.1"
   }
 }
